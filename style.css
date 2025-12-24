@@ -1,0 +1,66 @@
+body {
+  background-color: #212529 !important;
+}
+
+.title {
+  color: white !important;
+  font-weight: bold;
+}
+
+.card {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card:hover{
+    cursor: pointer;
+}
+
+.gamePlay{
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    top:1000px;
+    display: none;
+    padding: 50px;
+}
+
+.info{
+    display: flex;
+    gap: 10px;
+}
+
+#board{
+    width: 100%;;
+    height: 100%;
+    background-color: #485259;
+    position: relative;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.target{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+}
+
+.result{
+  width: 500px;
+  height: 500px;
+  background-color: #ffffff;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  display: none;
+}

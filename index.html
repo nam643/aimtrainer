@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aim Trainer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container px-4 py-5" id="custom-cards">
+      <h2 class="pb-2 border-bottom title">WELCOME TO AIM TRAINER</h2>
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('./images/fullMoon.jpg')"
+          >
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+              id = "shortTime"
+            >
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                Short time, more intense.
+              </h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img
+                    src="https://github.com/twbs.png"
+                    alt="Bootstrap"
+                    width="32"
+                    height="32"
+                    class="rounded-circle border border-white"
+                  />
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg
+                    class="bi me-2"
+                    width="1em"
+                    height="1em"
+                    role="img"
+                    aria-label="Duration"
+                  >
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small style="font-weight: bold; font-size: 24px;">5s</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('./images/sunflower.jpg')"
+          >
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+              id = "middleTime"
+            >
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                Little bit longer, but still intense.
+              </h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img
+                    src="https://github.com/twbs.png"
+                    alt="Bootstrap"
+                    width="32"
+                    height="32"
+                    class="rounded-circle border border-white"
+                  />
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg
+                    class="bi me-2"
+                    width="1em"
+                    height="1em"
+                    role="img"
+                    aria-label="Duration"
+                  >
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small style="font-weight: bold; font-size: 24px;">10s</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('./images/sea.jpg')"
+            
+          >
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1" id = "longTime">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                Chill, but focus.
+              </h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img
+                    src="https://github.com/twbs.png"
+                    alt="Bootstrap"
+                    width="32"
+                    height="32"
+                    class="rounded-circle border border-white"
+                  />
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg
+                    class="bi me-2"
+                    width="1em"
+                    height="1em"
+                    role="img"
+                    aria-label="Duration"
+                  >
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small style="font-weight: bold; font-size: 24px;">30s</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gamePlay">
+        <div class="info">
+            <p class="title">Time:</p>
+            <p class="title" id="clock">0</p>
+            <p class="title">Point</p>
+            <p class="title" id="point">0</p>
+        </div>
+        <div class="startbtn" id = "board">CLICK TO RUN ...</div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
